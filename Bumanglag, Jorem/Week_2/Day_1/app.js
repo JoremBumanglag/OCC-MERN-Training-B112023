@@ -36,14 +36,69 @@
 // console.log(fruits);
 // console.log(fruits[2]);
 
-//Arithmetic Operators
-const numOne = 5;
-const numTwo = 6;
+// //Arithmetic Operators
+// const numOne = 5;
+// const numTwo = 6;
 
-let result = numOne + numTwo;
+// let result = numOne + numTwo;
 
-console.log(numOne + numTwo);
-console.log(numOne - numTwo);
-console.log(numOne * numTwo);
-console.log(numOne / numTwo);
-console.log(numOne % numTwo);
+// console.log(numOne + numTwo);
+// console.log(numOne - numTwo);
+// console.log(numOne * numTwo);
+// console.log(numOne / numTwo);
+// console.log(numOne % numTwo);
+
+// //Comparison Operator
+// const numOne = 5;
+// const numTwo = 6;
+// const numThree = "5";
+
+// console.log(numOne == numThree); 
+// console.log(numOne === numThree); 
+// console.log(numOne != numThree);
+// console.log(numOne !== numThree);
+// console.log(numOne > numTwo);
+// console.log(numOne < numTwo);
+// console.log(numOne >= numTwo);
+// console.log(numOne <= numTwo);
+
+// //Logical Operator
+// let sunny = true;
+// let warm = false;
+
+// console.log(sunny && warm);
+// console.log(sunny || warm);
+// console.log(!warm);
+
+// //Assignment Operators:
+// let num = 5;
+// console.log(num);
+
+// num += 1;
+// console.log(num);
+
+// num -= 2;
+// console.log(num);
+
+// num *= 2;
+// console.log(num);
+
+// num /= 2;
+// console.log(num);
+
+//Conditional Statements
+let temperature = 25;
+
+if(temperature > 20){
+    console.log("It's a warm day!");
+}
+
+//else statement
+temperature = 10;
+
+if(temperature > 20){
+    console.log("It's a warm day!");
+}
+else{
+    console.log("It's a cold day!");
+}
