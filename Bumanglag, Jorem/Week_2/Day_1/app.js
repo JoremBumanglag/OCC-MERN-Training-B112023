@@ -86,19 +86,71 @@
 // num /= 2;
 // console.log(num);
 
-//Conditional Statements
-let temperature = 25;
+// //If statement
+// let temperature = 25;
 
-if(temperature > 20){
-    console.log("It's a warm day!");
+// if (temperature > 20) {
+//     console.log("It's a warm day!");
+// }
+
+// //else statement
+// temperature = 10;
+
+// if (temperature > 20) {
+//     console.log("It's a warm day!");
+// } else {
+//     console.log("It's a cold day!");
+// }
+
+
+// //else if statement
+// temperature = 20;
+
+// if (temperature > 20) {
+//     console.log("It's a warm day!");
+// } else if (temperature < 20) {
+//     console.log("It's a cold day!");
+// } else if (temperature == 20) {
+//     console.log("It's a fine day!")
+// }
+
+
+// //switch statement
+
+// let age = 18;
+
+// switch (true) {
+
+//     case age <= 20 && age >= 10:
+//         console.log("Adolescent");
+//     break;
+//     case age > 30 && age < 20:
+//         console.log("Young Adult");
+//     break;
+//     default: 
+//         console.log("Old");
+// }
+
+//While Loop
+
+let count = 0;
+
+while (count < 3) {
+    console.log("This is loop iteration #" + count);
+    count++;
 }
 
-//else statement
-temperature = 10;
+//do while 
 
-if(temperature > 20){
-    console.log("It's a warm day!");
-}
-else{
-    console.log("It's a cold day!");
+let num = 5;
+
+do {
+    console.log("This will run atleast once");
+    num--;
+} while (num > 0);
+
+//for loop
+
+for (let i=0; i < 3; i++) {
+    console.log("This is statement " + (i+1));
 }
