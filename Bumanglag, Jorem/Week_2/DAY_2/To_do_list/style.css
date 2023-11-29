@@ -19,6 +19,7 @@ form {
     padding: 1rem;
 }
 
+/* div container that holds the ordered list */
 .todo-container {
     background: #E5D4FF;
     display: flex;
@@ -26,7 +27,7 @@ form {
     text-align: start;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: 70%;
+    min-height: 100vw;
 }
 
 .todo {

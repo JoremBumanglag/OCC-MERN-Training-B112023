@@ -46,7 +46,7 @@ let addTodo = () => {
     }
 }
 
-//delete item from list
+//delete/complete item from list
 function deleteChecked(e){
     const item = e.target;
 
