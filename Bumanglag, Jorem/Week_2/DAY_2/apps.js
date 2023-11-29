@@ -57,13 +57,55 @@
 
 //   square(5, logResult);
 
-const person = {
-    name: "Garfield",
-    age: 25,
-    greet: function() {
-        console.log(`Hello. My name is ${this.name}, I am ${this.age} years old`)
-    }
-};
+// const person = {
+//     name: "Garfield",
+//     age: 25,
+//     greet: function() {
+//         console.log(`Hello. My name is ${this.name}, I am ${this.age} years old`)
+//     }
+// };
 
-console.log(person.name);
-person.greet();
+// console.log(person.name);
+// person.greet();
+
+let myNum = parseInt(document.getElementsByClassName("students")[0].innerHTML);
+
+myNum += 2;
+
+document.getElementsByClassName("students")[1].innerHTML = myNum;
+console.log(typeof myNum);
+
+let inputName = document.forms["myForm"]["myName"].value;
+
+function checkForm(){
+    if(inputName == "")
+    {
+        alert("Name cannot bet empty")
+        return false;
+    }
+}
+
+//adding numbers
+let display = parseInt(document.getElementsByTagName("h1")[0].innerHTML);
+
+let add = () => {
+    display = display + 1;
+    return (document.getElementsByTagName("h1")[0].innerHTML = display);
+}
+
+let minus = () => {
+    display--;
+    return (document.getElementsByTagName("h1")[0].innerHTML = display);
+}
+
+const li = document.createElement("li");
+const node = document.createTextNode("This is a list item");
+li.appendChild(node)
+
+const parent = document.getElementsByTagName("ul")[0];
+
+parent.appendChild(li);
+
+console.log(li);
+console.log(typeof li);
+

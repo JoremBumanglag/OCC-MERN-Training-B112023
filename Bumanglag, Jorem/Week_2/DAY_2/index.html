@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="apps.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <p class="students">0</p>
+    <p class="students">0</p>
+    <p class="students">0</p>
+
+    <form action="" id="myForm" onsubmit="return checkForm()">
+        <label for="myName">Name</label>
+        <input type="text" name="myName" value="" required>
+        <button type="submit" value="Submmit">Submit</button>
+    </form>
+
+    <h1>0</h1>
+    <button id="add" onclick="return add()">+</button>
+    <button id="minus" onclick="return minus()">-</button>
+
+    <ul id="myList">
+        
+    </ul>
+    <script src="apps.js"></script>
 </body>
 </html>
