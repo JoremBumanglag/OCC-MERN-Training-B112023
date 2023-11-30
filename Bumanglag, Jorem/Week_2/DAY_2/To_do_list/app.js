@@ -34,7 +34,6 @@ let addTodo = () => {
     deleteButton.classList.add("delete-btn");
     todoDiv.appendChild(deleteButton);
 
-
     //vallidation if txtfield is empty
     if(todoInput.value == "")
     {
@@ -66,7 +65,6 @@ function filterTodo(e) {
     const todos = todoList.childNodes;
     todos.forEach(function(todo){
         switch(e.target.value){
-
             case "all":
                 todo.style.display = "flex";
                 break;
@@ -89,4 +87,3 @@ function filterTodo(e) {
         }
     })
 }
-
