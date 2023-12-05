@@ -9,6 +9,8 @@ const app = express();
 mongoose.connect('mongodb://localhost/joremgo');
 mongoose.Promise = global.Promise;
 
+app.use(express.static('public'));
+
 
 app.use(bodyParser.json());
 

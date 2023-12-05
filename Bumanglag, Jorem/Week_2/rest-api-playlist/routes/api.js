@@ -4,7 +4,15 @@ const Jorem = require('..//models/jorem.js');
 
 //get the list of jorem from the db
 router.get('/jorem',function(req,res,next){
-    res.send({type:'GET'});
+    // Jorem.find({}).then(function(jorem)){
+    //     res.send(jorem);
+    // }
+    Jorem.geoNear(
+        {type:'Point',coordinates:[parseFloat(req.query.lng), parseFloat(req.query.lat)]},
+        {maxDistance:100000, spherical:true}
+    ).then(function(jorem){
+        res.send(jorem);
+    });
 });
 
 
