@@ -16,7 +16,7 @@ let addBook = async (req, res) => {
 let getAllBooks = async (req, res) => {
   try{
     const allBooks = await book.find();
-    res.status(200).json(allBooks);
+    res.status(200).json({allBooks});
   } catch (error) {
     res.status(500).json({ message: "Internal server error" });
   }

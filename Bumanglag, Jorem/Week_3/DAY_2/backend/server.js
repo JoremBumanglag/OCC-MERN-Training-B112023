@@ -4,6 +4,8 @@ const app = express();
 
 const mongoose = require("mongoose");
 
+const cors = require("cors");
+
 //import the routes
 const book_router = require("./routes/book_route");
 const user_router = require("./routes/user_route");
@@ -15,6 +17,8 @@ app.listen(3000,() => console.log("Ready to listen in PORT 3000"));
 mongoose.connect("mongodb+srv://bumanglagjorem:74de7ThhwUUmV5Tg@cluster0.vlprtpj.mongodb.net/bookstore?retryWrites=true&w=majority")
 .then(() => console.log("Database Connection Succesful"))
 .catch((error) => console.log(error));
+
+app.use(cors({origin: '*',}));
 
 //converts JSON to JS object
 app.use(express.json());

@@ -16,7 +16,7 @@ router.patch("/:id", updateBook);
 router.delete("/:id", deleteBook);
 
 //route for adding book
-router.post("/", authMiddleware, addBook);
+router.post("/", addBook);
 
 //route for finding a book
 router.get("/", getAllBooks);
